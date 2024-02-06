@@ -1,0 +1,1 @@
+path %PATH%;c:\minigp32\bin
