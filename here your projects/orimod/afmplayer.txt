@@ -1,0 +1,61 @@
+
+-------------------------------------------------------------------------------
+
+AFM v1.2 - yet another f***ing modplayer
+
+(w) 2001-2002 by Silpheed/Hitmen, Groepaz/Hitmen  www.hitmen-console.org
+
+-------------------------------------------------------------------------------
+
+plays standard Amiga 4-Channel Protracker Modules
+
+release note:
+
+this is the first release for gp32, somewhat beta still but what the heck :o)
+
+-------------------------------------------------------------------------------
+Gamepark 32 notes:
+-------------------------------------------------------------------------------
+
+specs:
+
+output: 41.000khz, 16bit, Mono
+
+used resources:
+
+.text   section: ~0x1780 bytes
+.rodata section: ~0x0500 bytes
+.data   section: ~0x0010 bytes
+.bss    section: ~0x6c00 bytes
+
+DMA2, DMA2-Interupt (for sound stream, always active)
+
+NO external libraries required
+
+-------------------------------------------------------------------------------
+GBA notes:
+-------------------------------------------------------------------------------
+
+specs:
+
+output: 15.290khz 8bit mono/stereo
+
+used resources:
+
+cpu: ~0x20 of 0xe4 Rasterlines = <15% (if all 4 channels active)
+
+.text section: ~0x1200 bytes
+.bss  section: ~0x0400 bytes
+
+internal RAM: 0x03000000-0x030003ff  0x0400 bytes mixing buffer
+              0x03000400-            <0x0100 bytes for mixing routines
+                                     (exact value returned by afm_install)
+
+if your linker script defines a section in internal RAM, exclude 0x03000000-
+0x030004ff from that.
+
+Timers 0 and 1, DMA1 (for sound stream, always active)
+
+NO external libraries required
+
+-------------------------------------------------------------------------------

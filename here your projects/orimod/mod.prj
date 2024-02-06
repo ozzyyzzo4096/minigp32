@@ -1,0 +1,39 @@
+[Project]
+Signature = 40
+NumFiles = 2
+Compiler = 
+BuildMakefile = 0
+
+[Archives]
+Directory = .
+Flags = *.*
+
+[Makefile]
+MAKE = make
+CC = gcc
+WRES = windres
+TEST = gcc -v
+Makefile = makefile
+MakefileDir = .
+Target = mod.exe
+TargetDir = .
+Build = 2
+Debug = 0
+Lang = 0
+CppFlags = 
+CcWarning = -W -Wall -pedantic
+CcOptimize = -O2
+CcFlags = 
+IncDirs = 
+LdStrip = -s
+LdOptions = 
+LdLibraries = 
+LdLibDirs = 
+
+[File1]
+Name = .\afm.h
+Show = 0
+
+[File2]
+Name = .\main.c
+Show = 0

@@ -1,0 +1,47 @@
+[Project]
+Signature = 40
+NumFiles = 4
+Compiler = 
+BuildMakefile = 0
+
+[Archives]
+Directory = .
+Flags = *.*
+
+[Makefile]
+MAKE = make
+CC = gcc
+WRES = windres
+TEST = gcc -v
+Makefile = makefile
+MakefileDir = .
+Target = example3.exe
+TargetDir = .
+Build = 2
+Debug = 0
+Lang = 0
+CppFlags = 
+CcWarning = 
+CcOptimize = 
+CcFlags = 
+IncDirs = -I /minigp32/include/gpinclude
+LdStrip = -s
+LdOptions = -Tlnkscript -lgpfont -lafm
+LdLibraries = -lgpstdlib -lgpos -lgpgraphic -lgpstdio -lgpsound -lgpmem 
+LdLibDirs = -L /minigp32/lib/gplib
+
+[File1]
+Name = .\afm.h
+Show = 0
+
+[File2]
+Name = .\gpmain.h
+Show = 0
+
+[File3]
+Name = .\gpstart.c
+Show = 0
+
+[File4]
+Name = .\main.c
+Show = 0
