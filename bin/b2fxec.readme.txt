@@ -1,0 +1,115 @@
+
+b2fxec v0.2e (c) 2002 Jouni 'Mr.Spiv' Korhonen
+
+	*Note! Version 0.2e adds data save option.*
+	*Note! Version 0.2d fixes a BMP loading problem.*
+	*Note! Version 0.2e adds better compatability to Pacrom v0.31b.*
+
+	b2fxec is a tool to create crunched (compressed) FXEs and GXBs
+	from normal GXBs and AXFs. The usage of this tool is almost
+	identical to famous b2fxe tool by Jeff F.
+	
+	The nice thing about b2fxec is that the outputted file also contains
+	a short and fast decruncher (decompressor) program that can
+	actually run the crunched file. So produced FXEs and GXBs are completely
+	self contained. I find it functionally equivalent to UPX and all other exe
+	packers.
+	
+	To find out program options type:
+		b2fxec -h
+		
+	There are some limitations at the moment: the crunched data and the
+	decrunched data must fit into GP32's memory at the same time! This
+	will change in the future - hopefully. The b2fxec cannot crunch existing
+	FXEs directly. If you want to crunch a FXE you must first unfxe it to
+	a GXB and then crunch it. You should find the unfxe tool from the my
+	web-pages.
+	
+	Have fun. Comments, bug reports etc:
+		mouho@iki.fi or meet me in #gp32dev at EfNet.
+	
+	Check my GP32 & NeoGeoPocket Color development pages:
+		http://www.deadcoderssociety.tk
+	
+	
+	/Jouni aka Mr.Spiv
+	
+	..in memorian of StoneCracker :)
+	
+	
+	
+	And finally some greetings to people at #gp32dev:
+	
+		_mp_, flavor, _ttl_, clemmy, ^yado^, don_migue, rlyeh, aj0,
+		trapflag, CMOTD, kojote,
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		and costis of cos! :)
+	
+	
